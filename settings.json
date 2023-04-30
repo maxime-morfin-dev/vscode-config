@@ -1,0 +1,137 @@
+{
+  // -- Editeur
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  // -- Sidebar
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+
+  // -- Code
+  "editor.occurrencesHighlight": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //Theme
+  "editor.fontFamily": "Fira Code, monospace",
+  "editor.fontSize": 13,
+  "editor.tabSize": 3,
+  "editor.fontLigatures": true,
+  "workbench.colorCustomizations": {
+    "[Vitesse Dark]": {
+      "editor.selectionBackground": "#3D59A1",
+      "editor.selectionHighlightBackground": "#3D59A1"
+    }
+  },
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.guides.bracketPairs": "active",
+
+  // Ergonomie
+  "editor.wordWrap": "on",
+  "editor.suggest.insertMode": "replace", // L'autocomplétion remplace le mot en cours
+  "editor.acceptSuggestionOnCommitCharacter": false, // Evite que l'autocomplétion soit accepté lors d'un . par exemple
+  "editor.formatOnPaste": false,
+  "editor.linkedEditing": true, // Quand on change un élément HTML, change la balise fermante
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false, // Un clic sur un fichier l'ouvre
+  "emmet.triggerExpansionOnTab": true,
+
+  // Fichiers
+  "files.autoSave": "onFocusChange",
+  "files.defaultLanguage": "markdown",
+  "files.exclude": {
+    "**/.idea": true
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.statusBar.visible": false,
+  "terminal.external.windowsExec": "/opt/homebrew/bin/fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.formatOnSave": true,
+  "workbench.productIconTheme": "icons-carbon",
+  "tailwindCSS.rootFontSize": 14,
+
+  //vim generals key bindig
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["s", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["s", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    // VS Code new marker @ next occurence
+    "<C-d>": false,
+    // Copy
+    "<C-c>": false,
+    // Cut
+    "<C-x>": false,
+    // Paste
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-y>": false
+  }
+}

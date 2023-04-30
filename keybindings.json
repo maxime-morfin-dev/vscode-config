@@ -1,0 +1,86 @@
+// Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défautauto[]
+[
+  // Etend la sélection
+  {
+    "key": "cmd+d",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  // Trouve toutes les occurences du mot sélectionné
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  // Ouvre un fichier
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.quickOpen"
+  },
+  // Crée un nouveau fichier
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  // Commandes
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.showCommands"
+  },
+  // Masque / Affiche la vue git
+  {
+    "key": "cmd+k",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "view.workbench.scm.visible"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  // Masque / Affiche le terminal
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  // Nettoie le terminal
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  // Reformatte le document
+  {
+    "key": "alt+cmd+l",
+    "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  }
+]
